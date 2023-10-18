@@ -1,0 +1,99 @@
+.carousel h3{font-family: "Nothing You Could Do", cursive;}
+body{position: relative;
+text-transform: capitalize;}
+.card-item::before{
+    position: absolute;
+    content:"";
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color:blue;
+}
+.card-item:hover::before{
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  transition: 0.5s;
+  color: #000;
+  
+
+}
+.card-item::after{
+    position: absolute;
+    content:"";
+    width: 0%;
+    height: 0%;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    background-color:blue;
+}
+.card-item:hover::after{
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  transition: 0.5s;
+  color: #000;
+  
+
+}
+.item{overflow: hidden;}
+.ci{
+  clip-path: polygon(0 0, 44% 0, 64% 100%, 0% 100%);
+   width: 100%; height: 100%; left: 0;
+  margin: 0px;
+padding: 0px; 
+scale: 1.1;
+
+}
+.item:hover .ci{scale:1.2; transition: 0.5s;  }
+.item:hover .ci2{scale:1.2; transition: 0.5s;  }
+
+   .empty{
+    width: 150px;
+    height: 6px;
+    background-color: black;
+    margin: 5px 0px;
+   }
+   .ci2{clip-path: polygon(55% 0, 100% 0%, 100% 100%, 28% 100%); width: 100%; height: 100%;
+    scale: 1.1;}
+
+    .itemm{transition: 0.5s;}
+    .itemm:hover{scale:1.1;  }
+    .content-item1{
+      text-align: center;
+      
+      height: 150px;
+      padding: 10px;
+      padding-top: 15px;
+      border: 1px solid salmon;
+      border-left: 0;
+    border-right: 0;}
+    .last-sec{
+      height: 50px;
+      padding: 10px;
+      padding-top: 15px;
+      border: 1px solid salmon;
+      border-left: 0;
+    border-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    }
+    .imgg{height: 350px; width: 300px;}
+    .content-item2{text-align: center;
+     
+      height: 150px;
+      padding: 10px;
+      padding-top: 15px;
+      border: 1px solid salmon;
+      border-left: 0;
+    border-right: 0;}
+
+    @media screen and (max-width: 800px) {
+     .ci,.ci2{
+     clip-path: none;
+     }
+     .btn10{margin-top: 20px;}
+    }
